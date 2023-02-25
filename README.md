@@ -1,15 +1,23 @@
-# Python File Lister
+# Python File Renamer
 
-This simple python script reads and renames all file names from a folder using a base name. (basename_1.txt, basename_2.txt etc.)
+This simple python script reads and renames all file names from a folder using a base name. It can target files with a specific extension or change the names of all files to the same base name regardless of their extension.
 
 ## Dependencies:
 * [Python (Any version)](https://www.python.org/)
 
-## Dependencies:
+## Usage:
 
-* Open `main.py` and edit the `folder_path` to the folder you want to get the file anmes out of.
-* Edit the `base_name` to the desired name for all the files.
-* Open the terminal inside the same folder where the `main.py` file is & run `python main.py`.
-* ***(Optionally)*** Edit the `target_type` to a file type, to rename only a specific file type in that folder.
+* Open `main.py`.
+* Edit the variables to fit your needs:
+  * `directory`: the directory containing the files you want to rename.
+  * `base_name`: the base name of the files you want to rename.
+  * `start_index`: the starting index for the new file names.
+  * `target_extension` (optional): the file extension you want to target. If left as '', the script will rename all files regardless of their type.
+* Open the terminal or command prompt and navigate to the directory where `main.py` is located.
+* Run the script via 
+```yaml
+python main.py
+```
+  
 
 ##### This is my second time using Python. Let me know what you think
